@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: ResponsiveLayout(
-        mobileView: const MobileView(),
-        tabletView: const TabletView(),
-        desktopView: const DesktopView(),
+        mobileView: const MobileScaffold(),
+        tabletView: const TabletScaffold(),
+        desktopView: const DesktopScaffold(),
       ),
     );
   }

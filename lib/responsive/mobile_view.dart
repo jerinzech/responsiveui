@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MobileView extends StatefulWidget {
-  const MobileView({Key? key}) : super(key: key);
+class MobileScaffold extends StatefulWidget {
+  const MobileScaffold({Key? key}) : super(key: key);
 
   @override
-  State<MobileView> createState() => _MobileViewState();
+  State<MobileScaffold> createState() => _MobileScaffoldState();
 }
 
-class _MobileViewState extends State<MobileView> {
+class _MobileScaffoldState extends State<MobileScaffold> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(backgroundColor: Colors.amber);

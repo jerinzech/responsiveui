@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TabletView extends StatelessWidget {
-  const TabletView({Key? key}) : super(key: key);
+class TabletScaffold extends StatelessWidget {
+  const TabletScaffold({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

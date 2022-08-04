@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:responsiveui/constants.dart';
 
-class TabletScaffold extends StatelessWidget {
+class TabletScaffold extends StatefulWidget {
   const TabletScaffold({Key? key}) : super(key: key);
 
   @override
+  State<TabletScaffold> createState() => _TabletScaffoldState();
+}
+
+class _TabletScaffoldState extends State<TabletScaffold> {
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(backgroundColor: Colors.blue);
+    return Scaffold(
+      appBar: myAppBar,
+      backgroundColor: myDefaultBackgroundColor,
+      drawer: myDrawer,
+    );
   }
 }

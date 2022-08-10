@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsiveui/constants.dart';
+import 'package:responsiveui/utils/my_gridbox.dart';
+import 'package:responsiveui/utils/my_listbox.dart';
 
 class MobileScaffold extends StatefulWidget {
   const MobileScaffold({Key? key}) : super(key: key);
@@ -18,6 +20,28 @@ class _MobileScaffoldState extends State<MobileScaffold> {
       body: Column(
         children: [
           //4 box on the top
+          AspectRatio(
+            aspectRatio: 1,
+            child: SizedBox(
+              width: double.infinity,
+              child: GridView.builder(
+                itemCount: 4,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                itemBuilder: (context, index) {
+                  return const myGridBox();
+                },
+              ),
+            ),
+          ),
+
+          Expanded(
+              child: ListView.builder(
+            itemCount: 5,
+            itemBuilder: (context, index) {
+              return const myListBox();
+            },
+          ))
         ],
       ),
     );
